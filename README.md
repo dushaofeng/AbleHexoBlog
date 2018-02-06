@@ -63,5 +63,28 @@ feed:
  - 修改侧边栏的所有菜单、链接名称
     >如果要修改侧边栏的显示名称，需要到语言文件中修改相应中文即可
 
-# 如何
+# 启用侧边栏的"分类"菜单
+ - hexo new page "all-categories"
+ - 修改根目录的source/all-categories/index.md文件，将内容替换如下，包括三个"---"符号哦
+    ```
+---
+title: "all-categories"
+layout: "all-categories"
+comments: false
+---
+    ```
+
+# 启用侧边栏的"标签"菜单
+ - hexo new page "all-tags"
+ - 替换根目录的source/all-tags/index.md中的内容如下：
+```
+---
+title: "all-tags"
+layout: "all-tags"
+comments: false
+---
+```
+
+# 启用侧边栏的"归档"菜单
+ - 
 # 写文章
