@@ -97,3 +97,7 @@ comments: false
 ```
 
 # 写文章
+
+ - 还是把自带的那个hello-world.md文章删掉吧，太丑了
+ - hexo new "XXX" 新建一篇文章
+     >一定看清，这里的new命令后面直接跟上带日期的文章名称，并且没有page参数！
