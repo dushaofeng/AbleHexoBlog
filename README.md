@@ -48,6 +48,13 @@ feed:
 
 # 其他配置
 
+ - sidebar_behavior
+    >配置项可以改变侧边栏的动作，包括侧边栏大小、是否自动隐藏等，配置选项为1--6，可以自己尝试配一下
 
+ - clear_reading
+    >读文件时是否显示侧边栏
+
+ - cover_image:
+    >博客全局的背影图片，图片资源放在主题的\themes\tranquilpeak\source\assets\images目录，配置项直接使用图片文件名称，比如common_bg.jpg
 
 # 写文章
