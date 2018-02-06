@@ -86,5 +86,14 @@ comments: false
 ```
 
 # 启用侧边栏的"归档"菜单
- - 
+ - hexo new page "all-archives"
+ - 替换根目录的source/all-archives/index.md中的内容如下：
+```
+---
+title: "all-archives"
+layout: "all-archives"
+comments: false
+---
+```
+
 # 写文章
