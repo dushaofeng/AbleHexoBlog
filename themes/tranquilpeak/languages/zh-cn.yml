@@ -7,7 +7,7 @@ global:
     category: "分类"
     tags: "标签"
     tag: "标签"
-    archives: "归档"
+    archives: "所有文章"
     search: "搜索"
     about: "关于"
     author_picture: "作者的图片"

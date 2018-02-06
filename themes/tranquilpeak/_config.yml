@@ -38,10 +38,10 @@ sidebar:
             title: global.home
             url: /
             icon: home
-        categories:
-            title: global.categories
-            url: /all-categories
-            icon: bookmark
+#        categories:
+#            title: global.categories
+#            url: /all-categories
+#            icon: bookmark
         tags:
             title: global.tags
             url: /all-tags
@@ -56,15 +56,19 @@ sidebar:
             icon: search
             # `open-algolia-search` classes are used to open algolia search modal
             class: open-algolia-search
-        about:
-            title: global.about
-            url: /#about
-            icon: question
+#        about:
+#            title: global.about
+#            url: /#about
+#            icon: question
     author_links:
-        # github:
-        #     title: global.github
-        #     url: https://github.com/
-        #     icon: github
+         github:
+             title: global.github
+             url: https://github.com/dushaofeng
+             icon: github
+         mail:
+             title: global.mail
+             url: mailto:dushaofeng021@163.com
+             icon: envelope-o
         # stack_overflow:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
@@ -85,10 +89,6 @@ sidebar:
         #     title: global.linkedin
         #     url: https://www.linkedin.com/profile/
         #     icon: linkedin
-        # mail:
-        #     title: global.mail
-        #     url: mailto:
-        #     icon: envelope-o
     rss:
         rss:
             title: global.rss
