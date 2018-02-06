@@ -120,3 +120,24 @@ hexo s
 ## thumbnailImage加载不出来
 
 如果thumbnailImage中设置的本地图片加载不出来，可以设置_config文件的url-->/，即可正常加载
+
+# 推送Github
+ - 安装推送工具
+    >npm install hexo-deployer-git –save
+ - 配置根目录的_config文件中的github地址
+```
+deploy:
+  type: git
+  repository: git@github.com:dushaofeng/dushaofeng.github.io.git
+  branch: master
+```
+ - 生成静态页面并验证
+```
+hexo g
+hexo s
+```
+ - 推送到github
+    >hexo d
+ - 等待15分钟后刷新github地址即可
+**提示**
+这里的github推送地址和当前Hexo项目地址是分开的，也就是说，github.io的地址上面是没有hexo源码的，只有生成的静态页面。
