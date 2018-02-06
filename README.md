@@ -1,10 +1,12 @@
 这是使用Hexo搭建的私人博客，请严格按照以下顺序进行操作
 
 # Hexo搭建步骤
+```
 hexo init XXX
 cd XXX
 npm install
 hexo s
+```
 
 # 导入tranquilpeak主题
  - 下载tranquilpeak的主题包（不要用git的方式clone，否则里面的node_modules无法安装）
@@ -27,6 +29,7 @@ hexo s
 
  - npm install hexo-generator-feed --save
  - 配置文件添加如下配置
+
 ```
 feed:
     type: atom
@@ -44,7 +47,10 @@ feed:
 
 # 运行项目
 
- hexo s 运行之后，打开浏览器的http://127.0.0.1:4000/地址即可，记得要点击地址栏左侧的提示，禁用该地址的cookie，否则会在更新配置后看不到更新
+```
+hexo s
+```
+运行之后，打开浏览器的http://127.0.0.1:4000/地址即可，记得要点击地址栏左侧的提示，禁用该地址的cookie，否则会在更新配置后看不到更新
 
 # 其他配置
 
@@ -66,34 +72,29 @@ feed:
 # 启用侧边栏的"分类"菜单
  - hexo new page "all-categories"
  - 修改根目录的source/all-categories/index.md文件，将内容替换如下，包括三个"---"符号哦
-    ```
----
-title: "all-categories"
-layout: "all-categories"
-comments: false
----
-    ```
+```
+    title: "all-categories"
+    layout: "all-categories"
+    comments: false
+```
 
 # 启用侧边栏的"标签"菜单
  - hexo new page "all-tags"
  - 替换根目录的source/all-tags/index.md中的内容如下：
+
 ```
----
-title: "all-tags"
-layout: "all-tags"
-comments: false
----
+    title: "all-tags"
+    layout: "all-tags"
+    comments: false
 ```
 
 # 启用侧边栏的"归档"菜单
  - hexo new page "all-archives"
  - 替换根目录的source/all-archives/index.md中的内容如下：
 ```
----
-title: "all-archives"
-layout: "all-archives"
-comments: false
----
+    title: "all-archives"
+    layout: "all-archives"
+    comments: false
 ```
 
 # 写文章
@@ -101,3 +102,21 @@ comments: false
  - 还是把自带的那个hello-world.md文章删掉吧，太丑了
  - hexo new "XXX" 新建一篇文章
      >一定看清，这里的new命令后面直接跟上带日期的文章名称，并且没有page参数！
+
+## 编辑文章标题中的配置项如下
+ - tags
+     >定义该文章的标签，定义之后可以在分类里面查看自动建立的索引
+ - thumbnailImage
+     >首页的文章标题旁边图片
+ - thumbnailImagePosition
+     >首页的文章图片位置
+ - coverImage
+     >文章打开时顶部的封面图片
+ - \<!-- more -->
+     >这个标志之前的内容将会自动生成首页的概览
+ - \<!-- toc -->
+     >这个标志的位置将会自动生成文章目录
+
+## thumbnailImage加载不出来
+
+如果thumbnailImage中设置的本地图片加载不出来，可以设置_config文件的url-->/，即可正常加载
