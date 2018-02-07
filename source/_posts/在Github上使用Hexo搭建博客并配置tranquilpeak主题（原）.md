@@ -1,6 +1,30 @@
-该文章将会引导大家使用Hexo搭建私人博客，并配置tranquilpeak主题，最终效果[如此](https://dushaofeng.github.io/)，请**严格按照**以下顺序进行操作。
+---
+title: 在Github上使用Hexo搭建博客并配置tranquilpeak主题（原）
+date: 2018-02-07 14:06:25
+tags:
+ - Hexo
+ - Github
+ - tranquilpeak
+ - 教程
+clearReading: true
+thumbnailImage: post_head.jpg
+thumbnailImagePosition: left
+autoThumbnailImage: true
+metaAlignment: center
+coverImage: post_bg.jpg
+coverCaption: ""
+coverMeta: in
+coverSize: partial
+comments: false
+meta: false
+actions: false
+---
 
-[TOC]
+该文章将会引导大家使用Hexo搭建私人博客，并配置tranquilpeak主题，最终效果[如此](https://dushaofeng.github.io/)，请**严格按照**以下顺序进行操作。
+<!-- more -->
+
+文章目录
+<!-- toc -->
 
 # 1.创建Hexo工程
 cmd下以此执行以下命令
@@ -177,6 +201,14 @@ actions: false
  - `<!-- toc -->`
      >这个标志的位置将会自动生成文章目录
 
+ - `metaAlignment`
+    >查看文章时，文章标题的排列，居左还是居中
+
+ - `coverMeta`
+    >文章的标题是在文章图片背景的内部，还是底部
+    
+ - `coverSize`
+    >文章背景大小，full为全屏，partial为60%
 
 **thumbnailImage加载不出来**
 如果thumbnailImage中设置的本地图片加载不出来，可以设置_config文件的url-->/，即可正常加载
@@ -206,3 +238,4 @@ hexo s
 
 **提示**
 这里的github推送地址和当前Hexo项目地址是分开的，也就是说，github.io的地址上面是没有hexo源码的，只有生成的静态页面。
+
