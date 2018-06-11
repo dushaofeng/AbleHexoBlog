@@ -1,8 +1,9 @@
-该文章将会引导大家使用Hexo搭建私人博客，并配置tranquilpeak主题，最终效果[如此](https://dushaofeng.github.io/)，请**严格按照**以下顺序进行操作。
+该文章将会引导大家使用Hexo搭建私人博客，并配置tranquilpeak主题，最终效果[如此](https://dushaofeng.github.io/)，请 **严格按照** 以下顺序进行操作。
 
 [TOC]
 
 # 1.创建Hexo工程
+
 cmd下以此执行以下命令
 ```
 hexo init XXX
@@ -13,6 +14,7 @@ hexo s
 然后打开浏览器的`http://127.0.0.1:4000/`地址即可看到默认的Hexo页面。
 
 # 2.导入tranquilpeak主题
+
  - 下载tranquilpeak的[主题包](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/user.md)
     >不要用git的方式clone，否则里面的node_modules无法安装
  - 将主题包解压到Hexo项目的themes文件夹下面，重命名为`tranquilpeak`
@@ -20,6 +22,7 @@ hexo s
  - 修改**根目录**下的**_config.yml**文件，将theme变量设置为tranquilpeak
 
 **上面操作完成之后，先不要运行hexo s，还有一些必要的配置完成之后才可以**
+
 # 3.必要配置项
 
 ## 3.1.根目录的_config文件配置
@@ -110,80 +113,12 @@ feed:
 >一定看清，这里的new命令后面直接跟上带日期的文章名称，并且没有page参数!
 
 上面的命令将会在工程的`source\_posts`文件夹下面生成一个文件和相同名称的文件夹，其中的文件就是博客内容，文件夹用来放置当前文章所用的一些资源，比如图片等。
-编辑文章内容如下：
 
-```
----
-title: 2018-02-05-测试文章
-subtitle: 子标题
-date: 2018-02-06 10:13:19
-tags:
-    - Android
-    - 前端
-clearReading: true
-thumbnailImage: thumbnail_image.jpg
-thumbnailImagePosition: bottom
-autoThumbnailImage: true
-metaAlignment: center
-coverImage: cover_image.jpg
-coverCaption: "图片说明"
-coverMeta: in
-coverSize: partial
-comments: false
-meta: false
-actions: false
----
-
-这里是文章的概览，显示在主页缩略内容上面
-<!-- more -->
-
-这里是自动生成的文章目录
-<!-- toc -->
-
-
->CSDN的发布流程烂到家了，只能自己动手搭建技术博客
-
-# 这是大标题
-
-## 这是二级标题
-
-## 这里有个本地图片
-![](title_image.jpg)
-
-## 这里有个网络图片
-![](http://ww3.sinaimg.cn/large/006tNc79gw1fb0neee6mlj30dw0aldgf.jpg)
-
-## 文章结束
-
-```
-
-**配置解释**
-
- - `tags`
-     >定义该文章的标签，定义之后可以在分类里面查看自动建立的索引
-
- - `thumbnailImage`
-     >首页的文章标题旁边图片
-
- - `thumbnailImagePosition`
-     >首页的文章图片位置
-
- - `coverImage`
-     >文章打开时顶部的封面图片
-
- - `<!-- more -->`
-     >这个标志之前的内容将会自动生成首页的概览
-
- - `<!-- toc -->`
-     >这个标志的位置将会自动生成文章目录
-
-
-**thumbnailImage加载不出来**
-如果thumbnailImage中设置的本地图片加载不出来，可以设置_config文件的url-->/，即可正常加载
+编辑文件[模板](PoemTemplate.md)
 
 # 11.推送Github
  - 安装推送工具
-    >npm install hexo-deployer-git –save
+`npm install hexo-deployer-git –save`
 
  - 配置根目录的_config文件中的github地址
 ```
@@ -200,7 +135,7 @@ hexo s
 ```
 
  - 推送到github
-    >hexo d
+`hexo d`
 
  - **等待15分钟**后刷新github地址即可
 

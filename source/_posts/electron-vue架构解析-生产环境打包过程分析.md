@@ -22,6 +22,8 @@ actions: false
 <!-- toc -->
 
 我们先从生产环境打包流程来分析。
+<!-- more -->
+
 从package.json文件入口来看打包命令和调用的脚本：
 
 ```javascript

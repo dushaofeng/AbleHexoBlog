@@ -22,6 +22,7 @@ actions: false
 <!-- toc -->
 
 本系列文章将介绍[electron-vue](https://github.com/SimulatedGREG/electron-vue)前端框架的作用、结构、使用方法。
+<!-- more -->
 
 electron-vue是SimulatedGREG基于[vue-cli](https://github.com/vuejs/vue-cli)搭建的Vue+Webpack+Electron脚手架，可以用来开发跨PC平台的应用，源码地址在[这里](https://github.com/SimulatedGREG/electron-vue)。
 其主要功能/特色包括：
